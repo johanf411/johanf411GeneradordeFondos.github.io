@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%; /* Se adapta al tamaño de la pantalla */
+    max-width: 600px; /* Limitar el ancho máximo */
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h1 {
+    font-size: 22px; /* Título ligeramente más pequeño para móviles */
+    color: #333;
+    margin-bottom: 20px;
+    word-wrap: break-word; /* Permitir dividir texto largo */
+}
+
+#preview {
+    width: 100%; /* Ocupar todo el ancho disponible */
+    height: 250px; /* Reducir altura para móviles */
+    margin: 15px 0;
+    border-radius: 15px; /* Bordes redondeados */
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+button, a {
+    display: inline-block;
+    padding: 10px 15px; /* Botones más compactos */
+    margin: 10px 5px;
+    font-size: 14px; /* Tamaño reducido para móviles */
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%; /* Botones de ancho completo */
+    max-width: 300px; /* Límite de ancho máximo */
+}
+
+button:hover, a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efecto de "flotar" */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más marcada */
+}
+
+button:active, a:active {
+    transform: translateY(0); /* Volver al estado original */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Reducir sombra */
+}
+
+/* ----------- Media Queries para Móviles ----------- */
+
+/* Para pantallas más pequeñas (tablets y teléfonos grandes) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #preview {
+        height: 200px; /* Reducir aún más el fondo */
+    }
+
+    button, a {
+        font-size: 12px; /* Botones más pequeños */
+        padding: 8px 12px;
+    }
+}
+
+/* Para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    #preview {
+        height: 180px; /* Fondo más compacto */
+    }
+
+    button, a {
+        font-size: 10px;
+        padding: 6px 10px; /* Botones más compactos */
+    }
+}
